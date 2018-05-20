@@ -19,8 +19,7 @@ def route_login(request):
     # log(request.method)
     if request.method == 'POST':
         form = request.form()
-        U = User()
-        u = U.new(form)
+        u = User.new(form)
 
         # u = User.new(form)
     #     if u.validate_register():

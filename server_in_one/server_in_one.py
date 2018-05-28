@@ -74,8 +74,27 @@ class model(object):
         save(l, path)
 
 
-class User(model,form):
-    def __init__(self):
+     @classmethod
+    def new(cls, form):
+        m = cls(form)
+        return m
+
+
+    @classmethod
+    def find_by(cls, **kwargs):
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+            all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                return m
+        return None
+
+
+
+class User(model):
+    def __init__(self, form):
         self.username = form.get('username', '')
         self.password = form.get('password', '')
 

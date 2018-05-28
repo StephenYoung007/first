@@ -12,7 +12,7 @@ def load(path):
 
 class Model(object):
     @classmethod
-    def db_path(cls):
+    def db_path(cls):#
         classname = cls.__name__
         path = 'db/{}.txt'.format(classname)
         return path

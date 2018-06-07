@@ -1,21 +1,15 @@
 import requests
 import os
 
-num = 71
+num = 92
 i=1
-url_root = 'https://images.unsplash.com/photo-1494249465471-5655b7878482?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=191559dc1cae3f8967d568dfd8a77093&auto=format&fit=crop&w=800&q=60'
+url_root = 'http://www.znwz.org/wp-content/uploads/2017/07/1I34V144-'   http://www.znwz.org/wp-content/uploads/2017/07/1I34TT3-11.jpg
 dir = str(url_root.split('/')[-2])
 os.makedirs(dir)
-while i < num:
-    if i <10:
-        index = '00' + str(i)
-    elif i < 100:
-        index = '0' + str(i)
-    else:
-        index = str(i)
-
+while i <= num:
+    index = str(i)#.zfill(3)
     url_index = url_root + index
-    url = url_index + 's.jpg'
+    url = url_index + '.jpg'
     print(url)
     r = requests.get(url,stream=True)
     filename = str(i) + '.jpg'

@@ -92,6 +92,7 @@ class model(object):
         :return: 相当于User（form)或者Message(form)
         '''
         m = cls(form)
+        log('type of m', type(m))
         return m
 
 
@@ -113,6 +114,17 @@ class model(object):
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)
+
+    @classmethod
+    def find_by(cls, **kwargs):
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                return m
+        return None
 
 
     def __repr__(self):
@@ -152,7 +164,9 @@ class User(model):
         self.password = form.get('password', '')
 
     def valid_login(self):
-        return self.username == 'gua' and self.password == '123'
+        # return self.username == 'gua' and self.password == '123'
+        u = self.find_by(username=self.username)
+        return u and u.password == self.password
 
 
     def valid_register(self):
@@ -209,7 +223,7 @@ def route_login(request):
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
-        log('type of u', type(u))
+        # log('type of u', type(u))
         if u.valid_login():
             result = '登录成功'
         else:
@@ -241,12 +255,29 @@ def route_register(request):
     return r.encode(encoding='utf-8')
 
 
+message_list = []
+
+
+def route_message(request):
+    if request.method == 'POST':
+        form = request.form()
+        msg = Message.new(form)
+        msg.save()
+        message_list.append(msg)
+    header = 'HTTP/1.1 200 FUCK\r\nContent-Type: text/html\r\n'
+    body = templates('html_basic.html')
+    msgs = '<br/>'.join([str(m) for m in message_list])
+    body = body.replace('{{messages}}', msgs)
+    r = header + '\r\n' + body
+    return r.encode(encoding='utf-8')
+
 
 
 route_dict = {
     '/' : route_index,
     '/login' : route_login,
     '/register' : route_register,
+    '/messages' : route_message,
 }
 
 
@@ -279,6 +310,7 @@ def run(host='', port=3000):
             connection, address = s.accept()
             r = connection.recv(1024)
             r = r.decode('utf-8')
+            # log('r', r)
             if len(r.split()) < 2:
                 continue
             path = r.split()[1]
@@ -287,6 +319,7 @@ def run(host='', port=3000):
             request.body = r.split('\r\n\r\n', 1)[1]
             # log('path', path)
             response = response_for_path(path)
+            # log(type(response), response)
             # print('request.method:', request.method, '\r\nrequest.path:', request.path, '\r\nrequest.body:', request.body, '\r\nrequest.query:', request.query)
             connection.sendall(response)
             connection.close()

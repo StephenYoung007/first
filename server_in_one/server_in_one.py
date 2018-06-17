@@ -23,6 +23,37 @@ class Request(object):
         self.path = ''
         self.query = {}
         self.body = ''
+        self.headers = {}
+        self.cookies = {}
+
+
+    def add_cookies(self):
+        """
+        height=169; user=gua
+        :return:
+        """
+        cookies = self.headers.get('Cookie', '')
+        kvs = cookies.split('; ')
+        log('cookie', kvs)
+        for kv in kvs:
+            if '=' in kv:
+                k, v = kv.split('=')
+                self.cookies[k] = v
+
+    def add_headers(self, header):
+        """
+        [
+            'Accept-Language: zh-CN,zh;q=0.8'
+            'Cookie: height=169; user=gua'
+        ]
+        """
+        lines = header
+        for line in lines:
+            k, v = line.split(': ', 1)
+            self.headers[k] = v
+        # 清除 cookies
+        self.cookies = {}
+        self.add_cookies()
 
 
     def form(self):
@@ -32,6 +63,7 @@ class Request(object):
         body = urllib.parse.unquote(self.body)
         args = body.split('&')
         f= {}
+        log(args)
         for arg in args:
             k,v = arg.split('=')
             f[k] = v
@@ -92,7 +124,7 @@ class model(object):
         :return: 相当于User（form)或者Message(form)
         '''
         m = cls(form)
-        log('type of m', type(m))
+        # log('type of m', type(m))
         return m
 
 
@@ -196,6 +228,25 @@ def parsed_path(path):
     return path, query
 
 
+session = {
+    'session id' : {
+        'username' : 'gua',
+        '过期时间' : '2.22 21:00:00',
+    }
+}
+
+import random
+
+def random_str():
+    seed = 'abcdefjsad89234hdsfkljasdkjghigaksldf89weru'
+    s = ''
+    for i in range(16):
+        random_index = random.randint(0, len(seed) - 2)
+        s += seed[random_index]
+    return s
+
+
+
 def route_static(request):
     filename = request.query.get('file', 'doge.gif')
     path = 'static/' + filename
@@ -211,27 +262,52 @@ def templates(name):
         return f.read()
 
 
+def  current_user(request):
+    session_id = request.cookies.get('user', '游客')
+    username = session.get(session_id, '游客')
+    return username
+
+
 def route_index(request):
     header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
     body = templates('index.html')
+    username = current_user(request)
+    body = body.replace('{{username}}', username)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
 
+def response_with_headers(headers):
+    header = 'HTTP/1.1 210 FUCK OK\r\n'
+    header += ''.join(['{}:{}\r\n'.format(k, v)
+                       for k, v in headers.items()])
+    return header
+
+
 def route_login(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    # header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    headers = {
+        'Content-Type' : 'text/html',
+    }
+    username = current_user(request)
+
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
         # log('type of u', type(u))
         if u.valid_login():
+            session_id = random_str()
+            session[session_id] = u.username
+            headers['Set-Cookies'] = 'user={}'.format(session_id)
             result = '登录成功'
         else:
-            result = '登录失败'
+            result = '用户名或密码错误'
     else:
         result = ''
     body = templates('login.html')
     body = body.replace('{{result}}', result)
+    body = body.replace('{{username}}', username)
+    header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
@@ -259,6 +335,11 @@ message_list = []
 
 
 def route_message(request):
+    username = current_user(request)
+    if username == '【游客】':
+        log('****debug****,route_message未登录')
+        pass
+    log('本次请求的method：', request.method)
     if request.method == 'POST':
         form = request.form()
         msg = Message.new(form)
@@ -316,7 +397,9 @@ def run(host='', port=3000):
             path = r.split()[1]
             # print('response : \n', r)
             request.method = r.split()[0]
+            request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             request.body = r.split('\r\n\r\n', 1)[1]
+            log('----', request.__dict__)
             # log('path', path)
             response = response_for_path(path)
             # log(type(response), response)

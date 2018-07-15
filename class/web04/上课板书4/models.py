@@ -51,6 +51,7 @@ class Model(object):
         # m 是 dict, 用 cls.new(m) 可以初始化一个 cls 的实例
         # 不明白就 log 大法看看这些都是啥
         ms = [cls.new(m) for m in models]
+        log('ms', ms)
         return ms
 
     @classmethod
@@ -64,7 +65,7 @@ class Model(object):
         用法如下，kwargs 是只有一个元素的 dict
         u = User.find_by(username='gua')
         """
-        # log('kwargs, ', kwargs)
+        log('kwargs, ', kwargs)
         k, v = '', ''
         for key, value in kwargs.items():
             k, v = key, value

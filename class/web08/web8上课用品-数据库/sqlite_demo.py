@@ -122,19 +122,19 @@ def update(conn, user_id, email):
 
 def main():
     # 指定数据库名字并打开
-    db_path = 'web8.sqlite'
+    db_path = 'demo.sqlite'
     conn = sqlite3.connect(db_path)
     print("打开了数据库")
     # 打开数据库后 就可以用 create 函数创建表
-    create(conn)
+    # create(conn)
     # 然后可以用 insert 函数插入数据
-    # insert(conn, 'sql4', '1234', 'a@b.c')
+    insert(conn, 'sql4', '1234', 'a@b.c')
     # 可以用 delete 函数删除数据
-    # delete(conn, 1)
+    delete(conn, 1)
     # 可以用 update 函数更新数据
     # update(conn, 1, 'gua@cocode.cc')
     # select 函数查询数据
-    # select(conn)
+    select(conn)
     # 必须用 commit 函数提交你的修改
     # 否则你的修改不会被写入数据库
     conn.commit()

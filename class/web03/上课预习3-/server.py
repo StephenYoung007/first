@@ -1,3 +1,13 @@
+# coding: utf-8
+
+"""
+url 的规范
+第一个 ? 之前的是 path
+? 之后的是 query
+http://c.cc/search?a=b&c=d&e=1
+PATH  /search
+QUERY a=b&c=d&e=1
+"""
 import socket
 import urllib.parse
 
@@ -14,42 +24,11 @@ class Request(object):
         self.path = ''
         self.query = {}
         self.body = ''
-        self.headers = {}
-        self.cookies = {}
-
-    def add_cookies(self):
-        """
-        height=169; user=gua
-        :return:
-        """
-        cookies = self.headers.get('Cookie', '')
-        kvs = cookies.split('; ')
-        log('cookie', kvs)
-        for kv in kvs:
-            if '=' in kv:
-                k, v = kv.split('=')
-                self.cookies[k] = v
-
-    def add_headers(self, header):
-        """
-        [
-            'Accept-Language: zh-CN,zh;q=0.8'
-            'Cookie: height=169; user=gua'
-        ]
-        """
-        lines = header
-        for line in lines:
-            k, v = line.split(': ', 1)
-            self.headers[k] = v
-        # 清除 cookies
-        self.cookies = {}
-        self.add_cookies()
 
     def form(self):
         body = urllib.parse.unquote(self.body)
         args = body.split('&')
         f = {}
-        log('debug args', args)
         for arg in args:
             k, v = arg.split('=')
             f[k] = v
@@ -68,7 +47,7 @@ def error(request, code=404):
     # 之前上课我说过不要用数字来作为字典的 key
     # 但是在 HTTP 协议中 code 都是数字似乎更方便所以打破了这个原则
     e = {
-        404: b'HTTP/1.x 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
+        404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
     }
     return e.get(code, b'')
 
@@ -130,7 +109,7 @@ def run(host='', port=3000):
             connection, address = s.accept()
             r = connection.recv(1000)
             r = r.decode('utf-8')
-            log('ip and request, {}\n{}'.format(address, r))
+            # log('ip and request, {}\n{}'.format(address, request))
             # 因为 chrome 会发送空请求导致 split 得到空 list
             # 所以这里判断一下防止程序崩溃
             if len(r.split()) < 2:
@@ -138,18 +117,14 @@ def run(host='', port=3000):
             path = r.split()[1]
             # 设置 request 的 method
             request.method = r.split()[0]
-            request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             # 把 body 放入 request 中
             request.body = r.split('\r\n\r\n', 1)[1]
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
-            log('debug **', 'sendall')
             # 把响应发送给客户端
             connection.sendall(response)
-            log('debug ****', 'close')
             # 处理完请求, 关闭连接
             connection.close()
-            log('debug *', 'closed')
 
 
 if __name__ == '__main__':
@@ -158,5 +133,4 @@ if __name__ == '__main__':
         host='',
         port=3000,
     )
-    # 如果不了解 **kwargs 的用法, 上过基础课的请复习函数, 新同学自行搜索
     run(**config)

@@ -36,7 +36,7 @@ def log(*args, **kwargs):
 # 注意 methods 参数是一个 list，它规定了这个函数能接受的 HTTP 方法
 @app.route('/', methods=['GET'])
 def hello_world():
-    return 'Hello Gua'
+    return 'Hello Dong Dong'
 
 
 # 这是访问 /message 的请求
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     # host 参数指定为 '0.0.0.0' 可以让别的机器访问你的代码
     config = dict(
         debug=True,
-        host='0.0.0.0',
+        host='localhost',
         port=2000,
     )
     app.run(**config)

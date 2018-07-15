@@ -40,12 +40,9 @@ def templates(name):
 
 
 def  current_user(request):
-    log('********', 'request.cookies', request.cookies)
-    session_id = request.cookies.get('user', '游客')
-    log('******','session_id', session_id , session)
+    # session_id = request.cookies.get('user', '游客')
     # username = session.get(session_id, '游客')
     username = request.cookies.get('user', '【游客】')
-    log('****', 'username', username, 'cookies', request.cookies)
     return username
 
 
@@ -71,7 +68,6 @@ def route_login(request):
         'Content-Type' : 'text/html',
     }
     username = current_user(request)
-
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
@@ -80,7 +76,6 @@ def route_login(request):
             session_id = random_str()
             session[session_id] = u.username
             headers['Set-Cookies'] = 'user={}'.format(session_id)
-            log('**********', headers)
             result = '登录成功'
         else:
             result = '用户名或密码错误'
@@ -88,7 +83,6 @@ def route_login(request):
         result = ''
     body = templates('login.html')
     body = body.replace('{{result}}', result)
-    log('**', 'username', username)
     body = body.replace('{{username}}', username)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
@@ -120,10 +114,6 @@ message_list = []
 
 def route_message(request):
     username = current_user(request)
-    if username == '【游客】':
-        # log('****debug****,route_message未登录')
-        pass
-    log('本次请求的method：', request.method)
     if request.method == 'POST':
         form = request.form()
         msg = Message.new(form)

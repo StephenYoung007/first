@@ -25,7 +25,6 @@ class Request(object):
         """
         cookies = self.headers.get('Cookie', '')
         kvs = cookies.split('; ')
-        log('cookie', kvs)
         for kv in kvs:
             if '=' in kv:
                 k, v = kv.split('=')
@@ -134,7 +133,7 @@ def run(host='', port=3000):
 
 if __name__ == '__main__':
     conifg = dict(
-        host = '',
+        host = '127.0.0.1',
         port = 3000
     )
     run(**conifg)

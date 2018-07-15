@@ -80,8 +80,7 @@ def route_login(request):
         else:
             result = '用户名或密码错误'
     else:
-        result = ''
-    body = templates('login.html')
+        result = ''    body = templates('login.html')
     body = body.replace('{{result}}', result)
     body = body.replace('{{username}}', username)
     header = response_with_headers(headers)

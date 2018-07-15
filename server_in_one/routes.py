@@ -7,8 +7,7 @@ session = {
     'session id' : {
         'username' : 'gua',
         '过期时间' : '2.22 21:00:00',
-    }
-}
+    }}
 
 
 import random
@@ -121,7 +120,7 @@ def route_message(request):
     header = 'HTTP/1.1 200 FUCK\r\nContent-Type: text/html\r\n'
     body = templates('html_basic.html')
     msgs = '<br/>'.join([str(m) for m in message_list])
-    body = body.replace('{{messages}}', msgs)
+    body = body.replace('{{messaes}}', msgs)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 

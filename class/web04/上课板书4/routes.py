@@ -87,6 +87,7 @@ def route_login(request):
             # 设置一个随机字符串来当令牌使用
             session_id = random_str()
             session[session_id] = u.username
+            log(session_id)
             headers['Set-Cookie'] = 'user={}'.format(session_id)
             # 下面是把用户名存入 cookie 中
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
@@ -100,7 +101,7 @@ def route_login(request):
     body = body.replace('{{username}}', username)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
-    log('login 的响应', r)
+    # log('login 的响应', r)
     return r.encode(encoding='utf-8')
 
 

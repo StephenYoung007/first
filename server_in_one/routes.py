@@ -4,10 +4,10 @@ from models.User import User
 
 
 session = {
-    'session id' : {
-        'username' : 'gua',
-        '过期时间' : '2.22 21:00:00',
-    }
+    # 'session id' : {
+    #     'username' : 'gua',
+    #     '过期时间' : '2.22 21:00:00',
+    # }
 }
 
 
@@ -40,9 +40,9 @@ def templates(name):
 
 
 def  current_user(request):
-    # session_id = request.cookies.get('user', '游客')
-    # username = session.get(session_id, '游客')
-    username = request.cookies.get('user', '【游客】')
+    session_id = request.cookies.get('user', '游客')
+    username = session.get(session_id, '游客')
+    # username = request.cookies.get('user', '【游客】')
     return username
 
 
@@ -75,17 +75,18 @@ def route_login(request):
         if u.valid_login():
             session_id = random_str()
             session[session_id] = u.username
-            headers['Set-Cookies'] = 'user={}'.format(session_id)
+            log(session)
+            headers['Set-Cookie'] = 'user={}'.format(session_id)
             result = '登录成功'
         else:
             result = '用户名或密码错误'
     else:
-        result = ''    body = templates('login.html')
+        result = ''
+    body = templates('login.html')
     body = body.replace('{{result}}', result)
     body = body.replace('{{username}}', username)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
-    log('response', r)
     return r.encode(encoding='utf-8')
 
 

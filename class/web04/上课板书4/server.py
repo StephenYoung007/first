@@ -130,7 +130,7 @@ def run(host='', port=3000):
             connection, address = s.accept()
             r = connection.recv(1000)
             r = r.decode('utf-8')
-            log('ip and request, {}\n{}'.format(address, r))
+            # log('ip and request, {}\n{}'.format(address, r))
             # 因为 chrome 会发送空请求导致 split 得到空 list
             # 所以这里判断一下防止程序崩溃
             if len(r.split()) < 2:
@@ -143,13 +143,13 @@ def run(host='', port=3000):
             request.body = r.split('\r\n\r\n', 1)[1]
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
-            log('debug **', 'sendall')
+            # log('debug **', 'sendall')
             # 把响应发送给客户端
             connection.sendall(response)
-            log('debug ****', 'close')
+            # log('debug ****', 'close')
             # 处理完请求, 关闭连接
             connection.close()
-            log('debug *', 'closed')
+            # log('debug *', 'closed')
 
 
 if __name__ == '__main__':

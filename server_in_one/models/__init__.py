@@ -74,6 +74,7 @@ class Model(object):
         path = self.db_path()
         save(l, path)
 
+
     @classmethod
     def find_by(cls, **kwargs):
         k, v = '', ''
@@ -84,6 +85,19 @@ class Model(object):
             if v == m.__dict__[k]:
                 return m
         return None
+
+
+    @classmethod
+    def find_all(cls, **kwargs):
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        data = []
+        for m in all:
+            if v == m.__dict__[k]:
+                data.append(m)
+        return data
 
 
     def __repr__(self):

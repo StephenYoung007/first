@@ -5,6 +5,7 @@ class User(Model):
         self.username = form.get('username', '')
         self.password = form.get('password', '')
 
+
     def valid_login(self):
         # return self.username == 'gua' and self.password == '123'
         u = self.find_by(username=self.username)

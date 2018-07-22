@@ -4,10 +4,10 @@ from models.User import User
 
 
 session = {
-    # 'session id' : {
-    #     'username' : 'gua',
-    #     '过期时间' : '2.22 21:00:00',
-    # }
+    'session id' : {
+        'username' : 'gua',
+        '过期时间' : '2.22 21:00:00',
+    }
 }
 
 
@@ -55,11 +55,19 @@ def route_index(request):
     return r.encode(encoding='utf-8')
 
 
-def response_with_headers(headers):
-    header = 'HTTP/1.1 210 FUCK OK\r\n'
+def response_with_headers(headers, code=200):
+    header = 'HTTP/1.1 {} FUCK OK\r\n'.format(code)
     header += ''.join(['{}:{}\r\n'.format(k, v)
                        for k, v in headers.items()])
     return header
+
+
+def redirect(url):
+    headers={
+        'Location': url,
+    }
+    r = response_with_headers(headers, 302) + '\r\n'
+    return r.encode('utf-8')
 
 
 def route_login(request):
@@ -126,11 +134,17 @@ def route_message(request):
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
-
+def route_test(request):
+    username = current_user(request)
+    if username == 'gua':
+        return redirect('/')
+    else:
+        return  redirect('http://python.stephenyoung.top')
 
 route_dict = {
     '/' : route_index,
     '/login' : route_login,
     '/register' : route_register,
     '/messages' : route_message,
+    '/test' : route_test,
 }

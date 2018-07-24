@@ -130,7 +130,20 @@ class Model(object):
 
 
 
+    def remove(self):
+        models = self.all()
+        if self.__dict__.get('id') is not None:
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
 
+            if index > -1:
+                del models[index]
+        l = [m.__dict__ for m in models]
+        path = self.db_path()
+        save(l, path)
 
     # @classmethod
     # def find_by(cls, **kwargs):

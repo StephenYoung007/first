@@ -40,7 +40,7 @@ def templates(name):
 
 
 def  current_user(request):
-    session_id = request.cookies.get('user', '游客')
+    session_id = request.cookies.get('user', '')
     username = session.get(session_id, '游客')
     # username = request.cookies.get('user', '【游客】')
     return username

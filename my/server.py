@@ -115,7 +115,6 @@ def run(host='', port=3000):
             if len(r.split()) < 2:
                 continue
             path = r.split()[1]
-            # print('response : \n', r)
             request.method = r.split()[0]
             request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             request.body = r.split('\r\n\r\n', 1)[1]

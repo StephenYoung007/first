@@ -119,8 +119,6 @@ def run(host='', port=3000):
             request.method = r.split()[0]
             request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             request.body = r.split('\r\n\r\n', 1)[1]
-            # log('----', request.__dict__)
-            # log('path', path)
             response = response_for_path(path)
             connection.sendall(response)
             connection.close()

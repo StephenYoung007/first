@@ -122,10 +122,9 @@ def run(host='', port=3000):
             # log('----', request.__dict__)
             # log('path', path)
             response = response_for_path(path)
-            # log(type(response), response)
-            # print('request.method:', request.method, '\r\nrequest.path:', request.path, '\r\nrequest.body:', request.body, '\r\nrequest.query:', request.query)
             connection.sendall(response)
             connection.close()
+            print('closed')
 
 
 

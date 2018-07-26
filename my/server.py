@@ -124,7 +124,6 @@ def run(host='', port=3000):
             response = response_for_path(path)
             connection.sendall(response)
             connection.close()
-            print('closed')
 
 
 

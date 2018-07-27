@@ -1,0 +1,72 @@
+2018/07/27 07:58:43 path D:\萧井陌后端24课时全(without_video)\上半部\my_project\my/templates/
+2018/07/27 07:58:43 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jinja demo 1</title>
+</head>
+<body>
+    <!-- 变量替换 -->
+    <h1>gua</h1>
+
+    <!-- 循环 -->
+    
+        <span class="number">0</span>
+    
+        <span class="number">1</span>
+    
+        <span class="number">2</span>
+    
+
+    <!-- 循环加对象/字典访问 -->
+    <div class="user-container">
+    
+        <div class="user-cell">
+            <span>gua</span>
+            <span>1</span>
+        </div>
+    
+        <div class="user-cell">
+            <span>瓜</span>
+            <span>2</span>
+        </div>
+    
+    </div>
+</body>
+</html>
+2018/07/27 08:04:27 path D:\萧井陌后端24课时全(without_video)\上半部\my_project\my/templates/
+2018/07/27 08:04:27 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jinja demo 100</title>
+</head>
+<body>
+    <!-- 变量替换 -->
+    <h1>gua</h1>
+
+    <!-- 循环 -->
+    
+        <span class="number">0</span>
+    
+        <span class="number">1</span>
+    
+        <span class="number">2</span>
+    
+
+    <!-- 循环加对象/字典访问 -->
+    <div class="user-container">
+    
+        <div class="user-cell">
+            <span>gua</span>
+            <span>1</span>
+        </div>
+    
+        <div class="user-cell">
+            <span>瓜</span>
+            <span>2</span>
+        </div>
+    
+    </div>
+</body>
+</html>

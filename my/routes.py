@@ -1,4 +1,9 @@
-from utils import log
+from utils import (
+    templates,
+    response_with_headers,
+    redirect,
+    log,
+                    )
 from models.Message import Message
 from models.User import User
 
@@ -23,6 +28,13 @@ def random_str():
     return s
 
 
+def  current_user(request):
+    session_id = request.cookies.get('user', '')
+    username = session.get(session_id, '游客')
+    # username = request.cookies.get('user', '【游客】')
+    return username
+
+
 def route_static(request):
     filename = request.query.get('file', 'doge.gif')
     path = 'static/' + filename
@@ -30,20 +42,6 @@ def route_static(request):
         header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n'
         img = header + b'\r\n' + f.read()
         return img
-
-
-
-def templates(name):
-    path = 'templates/' + name
-    with open(path, 'r', encoding='utf-8') as f:
-        return f.read()
-
-
-def  current_user(request):
-    session_id = request.cookies.get('user', '')
-    username = session.get(session_id, '游客')
-    # username = request.cookies.get('user', '【游客】')
-    return username
 
 
 def route_index(request):
@@ -54,20 +52,6 @@ def route_index(request):
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
-
-def response_with_headers(headers, code=200):
-    header = 'HTTP/1.1 {} FUCK OK\r\n'.format(code)
-    header += ''.join(['{}:{}\r\n'.format(k, v)
-                       for k, v in headers.items()])
-    return header
-
-
-def redirect(url):
-    headers={
-        'Location': url,
-    }
-    r = response_with_headers(headers, 302) + '\r\n'
-    return r.encode('utf-8')
 
 
 def route_login(request):

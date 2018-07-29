@@ -1,10 +1,10 @@
-from routes import (
+from utils import (
     templates,
     response_with_headers,
     redirect,
-    current_user,
+    log,
                     )
-from utils import log
+from routes import current_user
 from models.Todo import Todo
 from models.User import User
 

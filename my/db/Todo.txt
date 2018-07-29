@@ -48,15 +48,5 @@
     "id": 11,
     "title": "r4f4f",
     "user_id": 1
-  },
-  {
-    "id": 18,
-    "title": "vcvdll",
-    "user_id": 0
-  },
-  {
-    "id": 19,
-    "title": "fuck?",
-    "user_id": 0
   }
 ]

@@ -1,4 +1,8 @@
-from utils import log
+from utils import (
+    log,
+    redirect,
+    response_with_headers,
+)
 from models.Message import Message
 from models.User import User
 
@@ -55,19 +59,6 @@ def route_index(request):
     return r.encode(encoding='utf-8')
 
 
-def response_with_headers(headers, code=200):
-    header = 'HTTP/1.1 {} FUCK OK\r\n'.format(code)
-    header += ''.join(['{}:{}\r\n'.format(k, v)
-                       for k, v in headers.items()])
-    return header
-
-
-def redirect(url):
-    headers={
-        'Location': url,
-    }
-    r = response_with_headers(headers, 302) + '\r\n'
-    return r.encode('utf-8')
 
 
 def route_login(request):

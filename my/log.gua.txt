@@ -294,3 +294,1090 @@ Accept-Language: en-US,en;q=0.9
 Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
 
 
+2018/07/29 20:09:29 start at 127.0.0.1:3000
+2018/07/29 20:09:35 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:09:36 r GET /favicon.ico HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:09:48 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:20:23 start at 127.0.0.1:3000
+2018/07/29 20:20:27 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:21:20 start at 127.0.0.1:3000
+2018/07/29 20:21:23 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:32:51 start at 127.0.0.1:3000
+2018/07/29 20:32:55 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:33:18 start at 127.0.0.1:3000
+2018/07/29 20:33:21 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:33:45 start at 127.0.0.1:3000
+2018/07/29 20:33:47 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:34:12 start at 127.0.0.1:3000
+2018/07/29 20:34:15 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:34:30 start at 127.0.0.1:3000
+2018/07/29 20:34:33 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:34:45 start at 127.0.0.1:3000
+2018/07/29 20:34:47 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:34:56 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 32
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+task=%E7%83%A6%E7%83%A6%E7%83%A6
+2018/07/29 20:34:59 r 
+2018/07/29 20:35:33 start at 127.0.0.1:3000
+2018/07/29 20:35:36 r GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:35:36 r GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:35:36 r GET /static?file=doge.gif HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:35:37 r GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:35:38 r GET /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+
+2018/07/29 20:35:43 r POST /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=aghjdkfgsl2dhfes
+
+username=gua&password=123
+2018/07/29 20:35:43 ['username=gua', 'password=123']
+2018/07/29 20:35:43 {'session id': {'username': 'gua', '过期时间': '2.22 21:00:00'}, 'deaeffcr9s9fflsr': 'gua'}
+2018/07/29 20:35:47 r POST /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Origin: http://localhost:3000
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=deaeffcr9s9fflsr
+
+username=gua&password=123
+2018/07/29 20:35:47 ['username=gua', 'password=123']
+2018/07/29 20:35:47 {'session id': {'username': 'gua', '过期时间': '2.22 21:00:00'}, 'deaeffcr9s9fflsr': 'gua', 'd3ksw2kellsrfkdj': 'gua'}
+2018/07/29 20:35:54 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:37:06 start at 127.0.0.1:3000
+2018/07/29 20:37:08 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:38:14 r 
+2018/07/29 20:38:14 r 
+2018/07/29 20:38:14 r 
+2018/07/29 20:42:37 start at 127.0.0.1:3000
+2018/07/29 20:42:41 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:43:05 r 
+2018/07/29 20:43:05 r 
+2018/07/29 20:43:54 start at 127.0.0.1:3000
+2018/07/29 20:43:57 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:44:02 r GET /delete?id=10 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:50:54 start at 127.0.0.1:3000
+2018/07/29 20:50:57 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:51:01 r GET /edit?id=0 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:51:06 r GET /edit?id=3 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:51:47 r 
+2018/07/29 20:51:48 r GET /edit?id=0 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:52:15 start at 127.0.0.1:3000
+2018/07/29 20:52:18 r GET /edit?id=0 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:52:22 r GET /edit?id=3 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:52:40 start at 127.0.0.1:3000
+2018/07/29 20:52:56 start at 127.0.0.1:3000
+2018/07/29 20:53:01 r GET /edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:06 r GET /edit?id=4 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:08 r GET /edit?id=11 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:10 r GET /edit?id=10 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:12 r GET /edit?id=9 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:15 r GET /edit?id=8 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:17 r GET /edit?id=5 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:19 r GET /edit?id=4 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:21 r GET /edit?id=3 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 20:53:26 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 32
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+task=%E6%97%A5%E6%97%A5%E6%97%A5
+2018/07/29 20:55:05 r 
+2018/07/29 21:15:04 r 
+2018/07/29 21:15:04 r 
+2018/07/29 21:15:04 r GET /edit?id=0 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 21:17:05 r 
+2018/07/29 21:57:31 start at 127.0.0.1:3000
+2018/07/29 21:57:35 r GET /edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 21:57:44 r 
+2018/07/29 21:58:21 r GET /edit?id=8 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 21:58:30 r 
+2018/07/29 22:02:16 start at 127.0.0.1:3000
+2018/07/29 22:02:23 r GET /edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:27 r GET /delete?id=8 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:30 r GET /edit?id=8 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:39 r 
+2018/07/29 22:02:39 r GET /todo/edit HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:44 r POST /update?id= HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 7
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:44 r POST /update?id= HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 7
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:02:45 r POST /update?id= HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 7
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:03:05 r 
+2018/07/29 22:03:05 r 
+2018/07/29 22:03:17 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:03:28 r 
+2018/07/29 22:03:28 r 
+2018/07/29 22:03:28 r GET /todo/edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:03:37 r POST /update?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 10
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit?id=1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:03:37 r POST /update?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 10
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit?id=1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:05:05 r 
+2018/07/29 22:06:14 start at 127.0.0.1:3000
+2018/07/29 22:06:19 r POST /update?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 10
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit?id=1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:06:30 r 
+2018/07/29 22:06:39 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:06:42 r GET /todo/edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:07:05 r 
+2018/07/29 22:07:05 r 
+2018/07/29 22:07:16 start at 127.0.0.1:3000
+2018/07/29 22:07:32 start at 127.0.0.1:3000
+2018/07/29 22:07:35 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:07:40 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:07:40 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:07:41 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=d3ksw2kellsrfkdj
+
+
+2018/07/29 22:09:48 start at 127.0.0.1:3000
+2018/07/29 22:09:57 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:09:58 r GET /favicon.ico HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:09:59 r GET /todo/edit?id=1 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:10:03 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+task=sss
+2018/07/29 22:10:33 r 
+2018/07/29 22:10:33 r 
+2018/07/29 22:10:33 r 
+2018/07/29 22:10:34 r POST /todo/add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 8
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:10:34 ['']
+2018/07/29 22:12:47 start at 127.0.0.1:3000
+2018/07/29 22:12:53 r GET /todo/edit?id=5 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+
+2018/07/29 22:12:53 r GET /todo/edit HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:12:54 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:12:57 r GET /todo/edit?id=5 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:13:02 r POST /update?id=5 HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 61
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo/edit?id=5
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:13:16 r POST /add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 12
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:13:27 r 
+2018/07/29 22:15:34 start at 127.0.0.1:3000
+2018/07/29 22:15:38 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:15:44 r POST /todo/add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 50
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+task=%E5%90%88%E8%82%A5%E5%9B%9E%E5%90%88%E8%82%A5
+2018/07/29 22:15:44 ['task=合肥回合肥']
+2018/07/29 22:15:44 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:15:50 r 
+2018/07/29 22:15:51 r POST /todo/add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 41
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+task=%E4%BD%A0%E5%B9%B2%E5%93%88%E5%91%A2
+2018/07/29 22:15:51 ['task=你干哈呢']
+2018/07/29 22:15:51 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:16:02 r 
+2018/07/29 22:16:05 r POST /todo/add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 34
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:16:05 ['']
+2018/07/29 22:16:18 start at 127.0.0.1:3000
+2018/07/29 22:16:23 r POST /todo/add HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 34
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+2018/07/29 22:16:23 ['']

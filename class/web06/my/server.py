@@ -3,7 +3,7 @@ import urllib.parse
 from utils import log
 from routes import route_static
 from routes import route_dict
-from routes_simpletodo import route_simple_dict
+from routes_todo import todo_routes
 
 
 class Request(object):
@@ -96,7 +96,7 @@ def response_for_path(path):
         '/static' : route_static,
     }
     r.update(route_dict)
-    r.update(route_simple_dict)
+    r.update(todo_routes)
     # log('r', r, path, query)
     response = r.get(path, error)
     return response(request)

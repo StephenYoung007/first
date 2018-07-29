@@ -1,5 +1,4 @@
 import json
-import os.path
 
 
 def load(path):
@@ -26,11 +25,3 @@ def db_path(cls):
 
 def all():
     pass
-
-def test():
-    a = os.path.dirname(__file__)
-    print(a)
-
-
-if __name__ == '__main__':
-    test()

@@ -56,7 +56,7 @@ def edit(request):
     t = Todo.find_by(id=todo_id)
     if t.user_id != u.id:
         return redirect('/login')
-    body = templates('todo_edit.html')
+    body = templates('todo_edit.html', todos=t)
     body = body.replace('{{todo_id}}', str(t.id))
     # print('t.id', t.id)
     body = body.replace('{{todo_title}}', str(t.title))

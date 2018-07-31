@@ -7,6 +7,7 @@ class User(Model):
             self.id = int(self.id)
         self.username = form.get('username', '')
         self.password = form.get('password', '')
+        self.role = int(form.get('role', 10))
 
 
     def valid_login(self):
@@ -20,3 +21,7 @@ class User(Model):
             return False
         else:
             return True
+
+
+    def is_admin(self):
+        return self.role == 1

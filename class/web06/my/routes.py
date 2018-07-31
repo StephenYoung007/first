@@ -1,21 +1,16 @@
 from utils import (
     log,
     redirect,
+    http_response,
+    templates,
     response_with_headers,
 )
+import random
 from models.Message import Message
 from models.User import User
 
 
-session = {
-    'session id' : {
-        'username' : 'gua',
-        '过期时间' : '2.22 21:00:00',
-    }
-}
-
-
-import random
+session = {}
 
 
 def random_str():
@@ -36,61 +31,43 @@ def route_static(request):
         return img
 
 
-
-def templates(name):
-    path = 'templates/' + name
-    with open(path, 'r', encoding='utf-8') as f:
-        return f.read()
-
-
 def  current_user(request):
     session_id = request.cookies.get('user', '')
-    username = session.get(session_id, '游客')
-    # username = request.cookies.get('user', '【游客】')
-    return username
+    user_id = int(session.get(session_id, '-1'))
+    u = User.find_by(id=user_id)
+    return u
 
 
 def route_index(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
     body = templates('index.html')
-    username = current_user(request)
-    body = body.replace('{{username}}', username)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
+    return http_response(body)
 
 
 
 
 def route_login(request):
     # header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
-    headers = {
-        'Content-Type' : 'text/html',
-    }
-    username = current_user(request)
+    headers = {}
     if request.method == 'POST':
         form = request.form()
-        u = User.new(form)
+        u = User(form)
         # log('type of u', type(u))
         if u.valid_login():
+            user = User.find_by(username=u.username)
             session_id = random_str()
-            session[session_id] = u.username
-            log(session)
+            session[session_id] = user.id
+            log('session', session)
             headers['Set-Cookie'] = 'user={}'.format(session_id)
             result = '登录成功'
         else:
             result = '用户名或密码错误'
     else:
         result = ''
-    body = templates('login.html')
-    body = body.replace('{{result}}', result)
-    body = body.replace('{{username}}', username)
-    header = response_with_headers(headers)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
+    body = templates('login.html',result=result)
+    return http_response(body, headers=headers)
 
 
 def route_register(request):
-    header = 'HTTP/1.1 210 FUCK OK\r\nContent-Type: text/html\r\n'
     if request.method ==  'POST':
         form = request.form()
         u = User.new(form)
@@ -102,10 +79,8 @@ def route_register(request):
         print(type(result))
     else:
         result = ''
-    body = templates('register.html')
-    body = body.replace('{{result}}', result)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
+    body = templates('register.html',result=result)
+    return http_response(body)
 
 
 message_list = []
@@ -132,10 +107,24 @@ def route_test(request):
     else:
         return  redirect('http://python.stephenyoung.top')
 
+
+def route_admin_users(request):
+    u = current_user(request)
+    if u is not None and u.is_admin():
+        us = User.all()
+        body = templates('admin_user.html', users=us)
+        return http_response(body)
+    else:
+        return redirect('/login')
+
+
+
+
 route_dict = {
     '/' : route_index,
     '/login' : route_login,
     '/register' : route_register,
     '/messages' : route_message,
     '/test' : route_test,
+    '/admin/users' : route_admin_users,
 }

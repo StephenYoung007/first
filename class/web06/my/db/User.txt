@@ -2,21 +2,37 @@
   {
     "id": 0,
     "username": "gua",
-    "password": "123"
+    "password": "123",
+    "role": 10
   },
   {
     "id": 1,
     "username": "hello",
-    "password": "world"
+    "password": "world",
+    "role": 10
   },
   {
     "id": 2,
     "username": "erzi",
-    "password": "hezhengwei"
+    "password": "hezhengwei",
+    "role": 10
   },
   {
     "id": 3,
     "username": "son",
-    "password": "weiwei"
+    "password": "weiwei",
+    "role": 10
+  },
+  {
+    "id": 4,
+    "username": "yangyang",
+    "password": "yangyang",
+    "role": 10
+  },
+  {
+    "id": 5,
+    "username": "admin",
+    "password": "admin",
+    "role": 1
   }
 ]

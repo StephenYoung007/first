@@ -109,6 +109,8 @@ class Model(object):
             path = cls.db_path()
             save(l, path)
 
+
+
     def __repr__(self):
         """
         __repr__ 是一个魔法方法

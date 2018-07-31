@@ -259,3 +259,218 @@ Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
 <h1>NOT FOUND</h1>
 22:14:06 响应结束
 22:15:04 start at :3000
+22:08:17 start at :3000
+22:08:20 完整请求
+22:08:20 GET /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=8hdd8hdkhjar9f9j
+
+
+22:08:20 请求结束
+22:08:20 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=8hdd8hdkhjar9f9j']
+22:08:20 path and query /login {}
+22:08:20 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36', 'user': '8hdd8hdkhjar9f9j'}
+22:08:20 完整响应
+22:08:20 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+22:08:20 响应结束
+22:08:25 完整请求
+22:08:25 POST /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=8hdd8hdkhjar9f9j
+
+username=gua&password=123
+22:08:25 请求结束
+22:08:25 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=8hdd8hdkhjar9f9j']
+22:08:25 path and query /login {}
+22:08:25 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36', 'user': '8hdd8hdkhjar9f9j'}
+22:08:25 kwargs,  {'username': 'gua'} <class 'dict'>
+22:08:25 kwargs,  {'username': 'gua'} <class 'dict'>
+22:08:25 headers response {'Set-Cookie': 'user=dgcagibids9ds3fs'}
+22:08:25 完整响应
+22:08:25 HTTP/1.1 302 OK
+Content-Type: text/html
+Set-Cookie: user=dgcagibids9ds3fs
+Location: /
+
+
+22:08:25 响应结束
+22:08:26 完整请求
+22:08:26 GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=dgcagibids9ds3fs
+
+
+22:08:26 请求结束
+22:08:26 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=dgcagibids9ds3fs']
+22:08:26 path and query / {}
+22:08:26 完整响应
+22:08:26 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 123  @ 20:51:23
+            <a href="/edit?id=1">edit</a>
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : asdfas  @ 20:51:26
+            <a href="/edit?id=2">edit</a>
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+</body>
+</html>
+22:08:26 响应结束
+22:08:37 完整请求
+22:08:37 
+22:08:37 请求结束
+22:09:23 完整请求
+22:09:23 GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+22:09:23 请求结束
+22:09:24 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+22:09:24 path and query /todo {}
+22:09:24 完整响应
+22:09:24 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+22:09:24 响应结束
+22:09:24 完整请求
+22:09:24 GET /favicon.ico HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:3000/todo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+22:09:24 请求结束
+22:09:24 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+22:09:24 path and query /favicon.ico {}
+22:09:24 完整响应
+22:09:24 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+22:09:24 响应结束
+22:09:29 完整请求
+22:09:29 GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36
+
+
+22:09:29 请求结束
+22:09:29 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+22:09:29 path and query / {}
+22:09:29 完整响应
+22:09:29 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            1 : 123  @ 20:51:23
+            <a href="/edit?id=1">edit</a>
+            <a href="/delete?id=1">删除</a>
+        </div>
+    
+        <div>
+            2 : asdfas  @ 20:51:26
+            <a href="/edit?id=2">edit</a>
+            <a href="/delete?id=2">删除</a>
+        </div>
+    
+</body>
+</html>
+22:09:29 响应结束
+22:10:57 start at :3000

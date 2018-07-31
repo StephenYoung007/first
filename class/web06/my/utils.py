@@ -46,6 +46,7 @@ def redirect(url):
 def http_response(body, headers=None):
     header = 'HTTP/1.1 200 OK\r\nContent-ype: text/html\r\n'
     if headers is not None:
-        header = ''.join(['{}: {}\r\n'.format(k, v) for k, v in headers.items()])
+        header += ''.join(['{}: {}\r\n'.format(k, v) for k, v in headers.items()])
     r = header + '\r\n' + body
+    # return r
     return r.encode(encoding='utf-8')

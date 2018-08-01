@@ -110,7 +110,7 @@ print(s1.hexdigest())
 import uuid
 print('特殊不重复 id', str(uuid.uuid4()))
 
-
+'''
 {
     '索引': {
         'username': {
@@ -135,3 +135,4 @@ print('特殊不重复 id', str(uuid.uuid4()))
     "password": "123"
   }
 }
+'''

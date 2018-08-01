@@ -3273,3 +3273,51 @@ Accept-Language: en-US,en;q=0.9
 Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=j3sdjbr4g8gde8j8
 
 
+2018/08/01 21:45:01 start at 127.0.0.1:3000
+2018/08/01 21:45:38 start at 127.0.0.1:3000
+2018/08/01 21:45:48 r GET /todo HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=j3sdjbr4g8gde8j8
+
+
+2018/08/01 21:45:48 r GET /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=j3sdjbr4g8gde8j8
+
+
+2018/08/01 21:45:56 r GET /weibo/index HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=j3sdjbr4g8gde8j8
+
+
+2018/08/01 21:46:41 start at 127.0.0.1:3000
+2018/08/01 21:46:45 r GET /weibo/index HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36; user=j3sdjbr4g8gde8j8
+
+

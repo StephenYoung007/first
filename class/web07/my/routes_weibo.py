@@ -3,6 +3,7 @@ from utils import (
     response_with_headers,
     redirect,
     http_response,
+    log,
                     )
 
 
@@ -22,6 +23,7 @@ def current_user(request):
 def index(request):
     user_id = request.query.get('user_id', -1)
     user_id = int(user_id)
+    log('user_id', user_id)
     user = User.find(user_id)
     if user is None:
         return redirect('/login')

@@ -1,32 +1,26 @@
 [
   {
-    "completed": false,
     "id": 2,
     "task": "吃瓜",
+    "completed": false,
     "user_id": 2
   },
   {
-    "completed": false,
     "id": 3,
     "task": "新数据测试",
+    "completed": false,
     "user_id": 1
   },
   {
-    "completed": false,
-    "id": 4,
-    "task": "todo",
-    "user_id": 1
-  },
-  {
-    "completed": false,
     "id": 5,
     "task": "123",
+    "completed": false,
     "user_id": 1
   },
   {
-    "completed": false,
     "id": 6,
     "task": "hello",
+    "completed": false,
     "user_id": 2
   }
 ]

@@ -1,0 +1,274 @@
+20:48:50 start at :8000
+20:49:33 完整请求
+20:49:33 请求结束
+20:49:33 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+20:49:33 path and query /weibo/index {}
+20:49:33 kwargs,  {'id': -1} <class 'dict'>
+20:49:33 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /login
+
+
+20:49:33 完整请求
+20:49:33 请求结束
+20:49:33 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+20:49:33 path and query /login {}
+20:49:33 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36'}
+20:49:33 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+20:49:34 完整请求
+20:49:34 请求结束
+20:49:34 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+20:49:34 path and query /favicon.ico {}
+20:49:34 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+20:49:38 完整请求
+20:49:38 请求结束
+20:49:38 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36']
+20:49:38 path and query /login {}
+20:49:38 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36'}
+20:49:38 form debug ['username=gua', 'password=123'] 2
+20:49:38 kwargs,  {'username': 'gua'} <class 'dict'>
+20:49:38 kwargs,  {'username': 'gua'} <class 'dict'>
+20:49:38 headers response {'Content-Type': 'text/html', 'Set-Cookie': 'user=3dhdiddd4jwhrbf9'}
+20:49:38 HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=3dhdiddd4jwhrbf9
+Location: /
+
+
+20:49:38 完整请求
+20:49:38 请求结束
+20:49:38 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:38 path and query / {}
+20:49:38 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            <a href="/delete?id=2">删除</a>
+            <a href="/edit?id=2">修改</a>
+            2 : 吃瓜
+        </div>
+    
+        <div>
+            <a href="/delete?id=3">删除</a>
+            <a href="/edit?id=3">修改</a>
+            3 : 新数据测试
+        </div>
+    
+        <div>
+            <a href="/delete?id=4">删除</a>
+            <a href="/edit?id=4">修改</a>
+            4 : todo
+        </div>
+    
+        <div>
+            <a href="/delete?id=5">删除</a>
+            <a href="/edit?id=5">修改</a>
+            5 : 123
+        </div>
+    
+        <div>
+            <a href="/delete?id=6">删除</a>
+            <a href="/edit?id=6">修改</a>
+            6 : hello
+        </div>
+    
+</body>
+</html>
+20:49:45 完整请求
+20:49:45 请求结束
+20:49:45 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:45 path and query /delete {'id': '4'}
+20:49:45 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /
+
+
+20:49:46 完整请求
+20:49:46 请求结束
+20:49:46 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:46 path and query / {}
+20:49:46 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            <a href="/delete?id=2">删除</a>
+            <a href="/edit?id=2">修改</a>
+            2 : 吃瓜
+        </div>
+    
+        <div>
+            <a href="/delete?id=3">删除</a>
+            <a href="/edit?id=3">修改</a>
+            3 : 新数据测试
+        </div>
+    
+        <div>
+            <a href="/delete?id=5">删除</a>
+            <a href="/edit?id=5">修改</a>
+            5 : 123
+        </div>
+    
+        <div>
+            <a href="/delete?id=6">删除</a>
+            <a href="/edit?id=6">修改</a>
+            6 : hello
+        </div>
+    
+</body>
+</html>
+20:49:54 完整请求
+20:49:54 请求结束
+20:49:54 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:54 path and query /weibo {}
+20:49:54 HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+20:49:59 完整请求
+20:49:59 请求结束
+20:49:59 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:59 path and query /weibo/index {}
+20:49:59 kwargs,  {'id': -1} <class 'dict'>
+20:49:59 HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /login
+
+
+20:49:59 完整请求
+20:49:59 请求结束
+20:49:59 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:49:59 path and query /login {}
+20:49:59 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36', 'user': '3dhdiddd4jwhrbf9'}
+20:49:59 HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+20:50:03 完整请求
+20:50:03 请求结束
+20:50:03 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=3dhdiddd4jwhrbf9']
+20:50:03 path and query /login {}
+20:50:03 login, cookies {'Pycharm-e53a3ca9': '916546ed-a824-4246-a000-b1303d4d1c36', 'user': '3dhdiddd4jwhrbf9'}
+20:50:03 form debug ['username=gua', 'password=123'] 2
+20:50:03 kwargs,  {'username': 'gua'} <class 'dict'>
+20:50:03 kwargs,  {'username': 'gua'} <class 'dict'>
+20:50:03 headers response {'Content-Type': 'text/html', 'Set-Cookie': 'user=8gds2hd3lj99ehjr'}
+20:50:03 HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=8gds2hd3lj99ehjr
+Location: /
+
+
+20:50:04 完整请求
+20:50:04 请求结束
+20:50:04 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'user=8gds2hd3lj99ehjr']
+20:50:04 path and query / {}
+20:50:04 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple todo</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="task">
+        <button>add todo</button>
+    </form>
+
+    
+        <div>
+            <a href="/delete?id=2">删除</a>
+            <a href="/edit?id=2">修改</a>
+            2 : 吃瓜
+        </div>
+    
+        <div>
+            <a href="/delete?id=3">删除</a>
+            <a href="/edit?id=3">修改</a>
+            3 : 新数据测试
+        </div>
+    
+        <div>
+            <a href="/delete?id=5">删除</a>
+            <a href="/edit?id=5">修改</a>
+            5 : 123
+        </div>
+    
+        <div>
+            <a href="/delete?id=6">删除</a>
+            <a href="/edit?id=6">修改</a>
+            6 : hello
+        </div>
+    
+</body>
+</html>
+20:50:25 完整请求
+20:50:25 请求结束

@@ -102,7 +102,7 @@ class Model(object):
 
     @classmethod
     def find(cls, id):
-        return cls.find(id=id)
+        return cls.find_by(id=id)
 
     @classmethod
     def find_all(cls, **kwargs):

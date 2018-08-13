@@ -132,9 +132,9 @@ class Model(object):
         return '< {}\n{} >\n'.format(classname, s)
 
 
-
     def json(self):
-        return self.__dict__.copy()
+        d =  self.__dict__.copy()
+        return d
 
 
 

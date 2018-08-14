@@ -8953,3 +8953,1954 @@ Content-Type: application/json
 ]
 21:44:32 完整请求
 21:44:32 请求结束
+21:39:39 完整请求
+21:39:39 请求结束
+21:39:39 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:39 path and query /todo {} 
+21:39:39 响应
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+21:39:40 完整请求
+21:39:40 请求结束
+21:39:40 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:40 path and query /todo {} 
+21:39:40 响应
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+21:39:41 完整请求
+21:39:41 请求结束
+21:39:41 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:41 path and query /favicon.ico {} 
+21:39:41 响应
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+21:39:45 完整请求
+21:39:45 请求结束
+21:39:45 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:45 path and query /admin/users {} 
+21:39:45 响应
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+21:39:48 完整请求
+21:39:48 请求结束
+21:39:48 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:48 path and query /api/todo/all {} 
+21:39:48 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 4,
+    "title": "瓜",
+    "completed": false,
+    "ct": 1488975265,
+    "ut": 1488978669
+  }
+]
+21:39:58 完整请求
+21:39:58 请求结束
+21:39:58 请求结束
+21:39:58 请求结束
+21:39:58 完整请求
+21:39:58 请求结束
+21:39:58 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:39:58 path and query /api/todo/add {} 
+21:39:58 完整请求
+21:39:58 请求结束
+21:39:58 cookie ['']
+21:39:59 path and query /api/todo/add {} 
+21:39:59 完整请求
+21:39:59 请求结束
+21:39:59 cookie ['']
+21:39:59 path and query /api/todo/add {} 
+21:39:59 完整请求
+21:39:59 请求结束
+21:39:59 cookie ['']
+21:39:59 path and query /api/todo/add {} 
+21:42:09 完整请求
+21:42:09 请求结束
+21:42:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:09 path and query / {} 
+21:42:09 响应
+ HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+21:42:09 完整请求
+21:42:09 请求结束
+21:42:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:09 path and query /todo/index {} 
+21:42:09 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web10 todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+21:42:09 完整请求
+21:42:09 请求结束
+21:42:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:09 path and query /static {'file': 'gua.js'} 
+21:42:09 响应
+ HTTP/1.1 200 OK
+
+var log = function() {
+    console.log.apply(console, arguments)
+}
+
+var e = function(sel) {
+    return document.querySelector(sel)
+}
+
+/*
+ ajax 函数
+*/
+var ajax = function(method, path, data, responseCallback) {
+    var r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// TODO API
+// 获取所有 todo
+var apiTodoAll = function(callback) {
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiTodoAdd = function(form, callback) {
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+var apiTodoDelete = function(id, callback) {
+    var path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+var apiTodoUpdate = function(form, callback) {
+    var path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+// load weibo all
+var apiWeiboAll = function(callback) {
+    var path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiWeiboAdd = function(form, callback) {
+    var path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+21:42:09 完整请求
+21:42:09 请求结束
+21:42:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:09 path and query /static {'file': 'todo.js'} 
+21:42:09 响应
+ HTTP/1.1 200 OK
+
+var timeString = function(timestamp) {
+    t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+var todoTemplate = function(todo) {
+    var title = todo.title
+    var id = todo.id
+    var ut = timeString(todo.ut)
+    // data-xx 是自定义标签属性的语法
+    // 通过这样的方式可以给任意标签添加任意属性
+    // 假设 d 是 这个 div 的引用
+    // 这样的自定义属性通过  d.dataset.xx 来获取
+    // 在这个例子里面, 是 d.dataset.id
+    var t = `
+        <div class="todo-cell" id='todo-${id}' data-id="${id}">
+            <button class="todo-edit">编辑</button>
+            <button class="todo-delete">删除</button>
+            <span class='todo-title'>${title}</span>
+            <time class='todo-ut'>${ut}</time>
+        </div>
+    `
+    return t
+    /*
+    上面的写法在 python 中是这样的
+    t = """
+    <div class="todo-cell">
+        <button class="todo-delete">删除</button>
+        <span>{}</span>
+    </div>
+    """.format(todo)
+    */
+}
+
+var insertTodo = function(todo) {
+    var todoCell = todoTemplate(todo)
+    // 插入 todo-list
+    var todoList = e('.todo-list')
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+var insertEditForm = function(cell) {
+    var form = `
+        <div class='todo-edit-form'>
+            <input class="todo-edit-input">
+            <button class='todo-update'>更新</button>
+        </div>
+    `
+    cell.insertAdjacentHTML('beforeend', form)
+}
+
+var loadTodos = function() {
+    // 调用 ajax api 来载入数据
+    apiTodoAll(function(r) {
+        // console.log('load all', r)
+        // 解析为 数组
+        var todos = JSON.parse(r)
+        // 循环添加到页面中
+        for(var i = 0; i < todos.length; i++) {
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function() {
+    var b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        var input = e('#id-input-todo')
+        var title = input.value
+        log('click add', title)
+        var form = {
+            'title': title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            var todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+var bindEventTodoDelete = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            var todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEventTodoEdit = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+
+var bindEventTodoUpdate = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            var editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            var input = editForm.querySelector('.todo-edit-input')
+            var title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            var todoCell = self.closest('.todo-cell')
+            var todo_id = todoCell.dataset.id
+            var form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                var todo = JSON.parse(r)
+                var selector = '#todo-' + todo.id
+                var todoCell = e(selector)
+                var titleSpan = todoCell.querySelector('.todo-title')
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEvents = function() {
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    bindEventTodoUpdate()
+}
+
+var __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+__main()
+
+
+
+
+
+
+/*
+给 删除 按钮绑定删除的事件
+1, 绑定事件
+2, 删除整个 todo-cell 元素
+*/
+// var todoList = e('.todo-list')
+// // 事件响应函数会被传入一个参数, 就是事件本身
+// todoList.addEventListener('click', function(event){
+//     // log('click todolist', event)
+//     // 我们可以通过 event.target 来得到被点击的元素
+//     var self = event.target
+//     // log('被点击的元素是', self)
+//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
+//     // classList 属性保存了元素的所有 class
+//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
+//     // log(self.classList)
+//     // 判断是否拥有某个 class 的方法如下
+//     if (self.classList.contains('todo-delete')) {
+//         log('点到了 删除按钮')
+//         // 删除 self 的父节点
+//         // parentElement 可以访问到元素的父节点
+//         self.parentElement.remove()
+//     } else {
+//         // log('点击的不是删除按钮******')
+//     }
+// })
+21:42:10 完整请求
+21:42:10 请求结束
+21:42:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:10 path and query /api/todo/all {} 
+21:42:10 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 4,
+    "title": "瓜",
+    "completed": false,
+    "ct": 1488975265,
+    "ut": 1488978669
+  }
+]
+21:42:19 完整请求
+21:42:19 请求结束
+21:42:19 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:42:19 path and query /api/todo/add {} {"title":"ll"}
+21:42:19 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254139,
+  "ut": 1534254139
+}
+21:42:41 完整请求
+21:42:41 请求结束
+21:51:09 完整请求
+21:51:09 请求结束
+21:51:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:09 path and query /api/todo/delete {'id': '4'} 
+21:51:09 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "瓜",
+  "completed": false,
+  "ct": 1488975265,
+  "ut": 1488978669
+}
+21:51:10 完整请求
+21:51:10 请求结束
+21:51:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:10 path and query /api/todo/delete {'id': '5'} 
+21:51:10 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254139,
+  "ut": 1534254139
+}
+21:51:11 完整请求
+21:51:12 请求结束
+21:51:12 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:12 path and query /api/todo/add {} {"title":"ll"}
+21:51:12 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254672
+}
+21:51:12 完整请求
+21:51:12 请求结束
+21:51:12 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:12 path and query /api/todo/add {} {"title":"ll"}
+21:51:12 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254672
+}
+21:51:12 完整请求
+21:51:12 请求结束
+21:51:12 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:12 path and query /api/todo/add {} {"title":"ll"}
+21:51:12 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254672
+}
+21:51:12 完整请求
+21:51:12 请求结束
+21:51:12 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:12 path and query /api/todo/add {} {"title":"ll"}
+21:51:12 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254672
+}
+21:51:12 完整请求
+21:51:12 请求结束
+21:51:12 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:12 path and query /api/todo/add {} 
+21:51:13 完整请求
+21:51:13 请求结束
+21:51:13 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:13 path and query /api/todo/add {} {"title":"ll"}
+21:51:13 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254673,
+  "ut": 1534254673
+}
+21:51:13 完整请求
+21:51:13 请求结束
+21:51:13 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:13 path and query /api/todo/add {} {"title":"ll"}
+21:51:13 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 6,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254673,
+  "ut": 1534254673
+}
+21:51:13 完整请求
+21:51:13 请求结束
+21:51:13 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:13 path and query /api/todo/add {} {"title":"ll"}
+21:51:13 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 7,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254673,
+  "ut": 1534254673
+}
+21:51:13 完整请求
+21:51:13 请求结束
+21:51:13 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:13 path and query /api/todo/add {} {"title":"ll"}
+21:51:13 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 8,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254673,
+  "ut": 1534254673
+}
+21:51:13 完整请求
+21:51:13 请求结束
+21:51:13 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:13 path and query /api/todo/add {} {"title":"ll"}
+21:51:14 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 9,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254673,
+  "ut": 1534254673
+}
+21:51:14 完整请求
+21:51:14 请求结束
+21:51:14 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:14 path and query /api/todo/add {} {"title":"ll"}
+21:51:14 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254674,
+  "ut": 1534254674
+}
+21:51:14 完整请求
+21:51:14 请求结束
+21:51:14 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:14 path and query /api/todo/add {} {"title":"ll"}
+21:51:14 完整请求
+21:51:14 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 11,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254674,
+  "ut": 1534254674
+}
+21:51:14 请求结束
+21:51:14 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:14 path and query /api/todo/add {} {"title":"ll"}
+21:51:14 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 12,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254674,
+  "ut": 1534254674
+}
+21:51:14 完整请求
+21:51:14 请求结束
+21:51:14 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:14 path and query /api/todo/add {} {"title":"ll"}
+21:51:14 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 13,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254674,
+  "ut": 1534254674
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 14,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 15,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 16,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 17,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 18,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:15 完整请求
+21:51:15 请求结束
+21:51:15 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:15 path and query /api/todo/add {} {"title":"ll"}
+21:51:15 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 19,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254675,
+  "ut": 1534254675
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 20,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 21,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 22,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 23,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 24,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:16 完整请求
+21:51:16 请求结束
+21:51:16 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:16 path and query /api/todo/add {} {"title":"ll"}
+21:51:16 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 25,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254676,
+  "ut": 1534254676
+}
+21:51:17 完整请求
+21:51:17 请求结束
+21:51:17 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:17 path and query /api/todo/add {} {"title":"ll"}
+21:51:17 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 26,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254677,
+  "ut": 1534254677
+}
+21:51:17 完整请求
+21:51:17 请求结束
+21:51:17 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:51:17 path and query /api/todo/add {} {"title":"ll"}
+21:51:17 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 27,
+  "title": "ll",
+  "completed": false,
+  "ct": 1534254677,
+  "ut": 1534254677
+}
+21:52:15 完整请求
+21:52:15 请求结束
+21:52:51 完整请求
+21:52:51 请求结束
+21:52:51 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:51 path and query /api/todo/update {} {"id":"4","title":"ggg"}
+21:52:51 kwargs,  {'id': 4} <class 'dict'>
+21:52:51 debug 3
+21:52:51 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "ggg",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254771
+}
+21:52:51 完整请求
+21:52:51 请求结束
+21:52:51 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:51 path and query /api/todo/update {} 
+21:52:52 完整请求
+21:52:52 请求结束
+21:52:52 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:52 path and query /api/todo/update {} {"id":"4","title":"ggg"}
+21:52:52 kwargs,  {'id': 4} <class 'dict'>
+21:52:52 debug 3
+21:52:52 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "ggg",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254772
+}
+21:52:53 完整请求
+21:52:53 请求结束
+21:52:53 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:53 path and query /api/todo/update {} {"id":"4","title":"ggg"}
+21:52:53 kwargs,  {'id': 4} <class 'dict'>
+21:52:53 debug 3
+21:52:53 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "ggg",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254773
+}
+21:52:54 完整请求
+21:52:54 请求结束
+21:52:54 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:54 path and query /api/todo/update {} 
+21:52:55 完整请求
+21:52:55 请求结束
+21:52:55 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:55 path and query /api/todo/update {} 
+21:52:56 完整请求
+21:52:56 请求结束
+21:52:56 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:56 path and query /api/todo/update {} {"id":"4","title":""}
+21:52:56 kwargs,  {'id': 4} <class 'dict'>
+21:52:56 debug 3
+21:52:56 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254776
+}
+21:52:56 完整请求
+21:52:56 完整请求
+21:52:56 请求结束
+21:52:56 请求结束
+21:52:56 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:56 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:52:56 path and query /api/todo/update {} {"id":"4","title":""}
+21:52:56 path and query /api/todo/update {} {"id":"4","title":""}
+21:52:56 kwargs,  {'id': 4} <class 'dict'>
+21:52:56 kwargs,  {'id': 4} <class 'dict'>
+21:52:56 debug 3
+21:52:56 debug 3
+21:52:56 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254776
+}
+21:52:56 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254776
+}
+21:53:02 完整请求
+21:53:02 请求结束
+21:53:02 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+21:53:02 path and query /api/todo/update {} {"id":"4","title":"bfbr"}
+21:53:02 kwargs,  {'id': 4} <class 'dict'>
+21:53:02 debug 3
+21:53:02 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": 4,
+  "title": "bfbr",
+  "completed": false,
+  "ct": 1534254672,
+  "ut": 1534254782
+}
+21:54:15 完整请求
+21:54:15 请求结束
+22:11:10 完整请求
+22:11:10 请求结束
+22:11:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:11:10 path and query /todo/index {} 
+22:11:10 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web10 todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+22:11:10 完整请求
+22:11:10 完整请求
+22:11:10 请求结束
+22:11:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:11:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:11:10 path and query /static {'file': 'gua.js'} 
+22:11:10 path and query /static {'file': 'todo.js'} 
+22:11:10 响应
+ HTTP/1.1 200 OK
+
+var log = function() {
+    console.log.apply(console, arguments)
+}
+
+var e = function(sel) {
+    return document.querySelector(sel)
+}
+
+/*
+ ajax 函数
+*/
+var ajax = function(method, path, data, responseCallback) {
+    var r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// TODO API
+// 获取所有 todo
+var apiTodoAll = function(callback) {
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiTodoAdd = function(form, callback) {
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+var apiTodoDelete = function(id, callback) {
+    var path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+var apiTodoUpdate = function(form, callback) {
+    var path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+// load weibo all
+var apiWeiboAll = function(callback) {
+    var path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiWeiboAdd = function(form, callback) {
+    var path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+ i < todos.length; i++) {
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function() {
+    var b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        var input = e('#id-input-todo')
+        var title = input.value
+        log('click add', title)
+        var form = {
+            'title': title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            var todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+var bindEventTodoDelete = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            var todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEventTodoEdit = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+
+var bindEventTodoUpdate = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            var editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            var input = editForm.querySelector('.todo-edit-input')
+            var title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            var todoCell = self.closest('.todo-cell')
+            var todo_id = todoCell.dataset.id
+            var form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                var todo = JSON.parse(r)
+                var selector = '#todo-' + todo.id
+                var todoCell = e(selector)
+                var titleSpan = todoCell.querySelector('.todo-title')
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEvents = function() {
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    bindEventTodoUpdate()
+}
+
+var __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+__main()
+
+
+
+
+
+
+/*
+给 删除 按钮绑定删除的事件
+1, 绑定事件
+2, 删除整个 todo-cell 元素
+*/
+// var todoList = e('.todo-list')
+// // 事件响应函数会被传入一个参数, 就是事件本身
+// todoList.addEventListener('click', function(event){
+//     // log('click todolist', event)
+//     // 我们可以通过 event.target 来得到被点击的元素
+//     var self = event.target
+//     // log('被点击的元素是', self)
+//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
+//     // classList 属性保存了元素的所有 class
+//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
+//     // log(self.classList)
+//     // 判断是否拥有某个 class 的方法如下
+//     if (self.classList.contains('todo-delete')) {
+//         log('点到了 删除按钮')
+//         // 删除 self 的父节点
+//         // parentElement 可以访问到元素的父节点
+//         self.parentElement.remove()
+//     } else {
+//         // log('点击的不是删除按钮******')
+//     }
+// })
+22:11:10 完整请求
+22:11:10 请求结束
+22:11:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:11:11 path and query /api/todo/all {} 
+22:11:11 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 2,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 3,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 4,
+    "title": "bfbr",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254782
+  },
+  {
+    "id": 5,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 6,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 7,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 8,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 9,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 10,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 11,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 12,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 13,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 14,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 15,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 16,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 17,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 18,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 19,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 20,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 21,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 22,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 23,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 24,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 25,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 26,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254677,
+    "ut": 1534254677
+  },
+  {
+    "id": 27,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254677,
+    "ut": 1534254677
+  }
+]
+22:12:15 完整请求
+22:12:15 完整请求
+22:12:15 请求结束
+22:18:09 完整请求
+22:18:09 请求结束
+22:18:09 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:09 path and query /todo {} 
+22:18:09 响应
+ HTTP/1.1 404 NOT FOUND
+
+<h1>NOT FOUND</h1>
+22:18:10 完整请求
+22:18:10 请求结束
+22:18:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:10 path and query / {} 
+22:18:10 响应
+ HTTP/1.1 302 OK
+Content-Type: text/html
+Location: /todo/index
+
+
+22:18:10 完整请求
+22:18:10 请求结束
+22:18:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:10 path and query /todo/index {} 
+22:18:10 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>web10 todo ajax</title>
+    </head>
+    <body>
+        <input id='id-input-todo'>
+        <button id='id-button-add'>add</button>
+        <div class="todo-list">
+        </div>
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src='/static?file=gua.js'></script>
+        <script src='/static?file=todo.js'></script>
+    </body>
+</html>
+22:18:10 完整请求
+22:18:10 完整请求
+22:18:10 请求结束
+22:18:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:10 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:10 path and query /static {'file': 'todo.js'} 
+22:18:10 path and query /static {'file': 'gua.js'} 
+22:18:10 响应
+ HTTP/1.1 200 OK
+
+var log = function() {
+    console.log.apply(console, arguments)
+}
+
+var e = function(sel) {
+    return document.querySelector(sel)
+}
+
+/*
+ ajax 函数
+*/
+var ajax = function(method, path, data, responseCallback) {
+    var r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// TODO API
+// 获取所有 todo
+var apiTodoAll = function(callback) {
+    var path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiTodoAdd = function(form, callback) {
+    var path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+var apiTodoDelete = function(id, callback) {
+    var path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+var apiTodoUpdate = function(form, callback) {
+    var path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+// load weibo all
+var apiWeiboAll = function(callback) {
+    var path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+var apiWeiboAdd = function(form, callback) {
+    var path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+22:18:10 响应
+ HTTP/1.1 200 OK
+
+var timeString = function(timestamp) {
+    t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+var todoTemplate = function(todo) {
+    var title = todo.title
+    var id = todo.id
+    var ut = timeString(todo.ut)
+    // data-xx 是自定义标签属性的语法
+    // 通过这样的方式可以给任意标签添加任意属性
+    // 假设 d 是 这个 div 的引用
+    // 这样的自定义属性通过  d.dataset.xx 来获取
+    // 在这个例子里面, 是 d.dataset.id
+    var t = `
+        <div class="todo-cell" id='todo-${id}' data-id="${id}">
+            <button class="todo-edit">编辑</button>
+            <button class="todo-delete">删除</button>
+            <span class='todo-title'>${title}</span>
+            <time class='todo-ut'>${ut}</time>
+        </div>
+    `
+    return t
+    /*
+    上面的写法在 python 中是这样的
+    t = """
+    <div class="todo-cell">
+        <button class="todo-delete">删除</button>
+        <span>{}</span>
+    </div>
+    """.format(todo)
+    */
+}
+
+var insertTodo = function(todo) {
+    var todoCell = todoTemplate(todo)
+    // 插入 todo-list
+    var todoList = e('.todo-list')
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+var insertEditForm = function(cell) {
+    var form = `
+        <div class='todo-edit-form'>
+            <input class="todo-edit-input">
+            <button class='todo-update'>更新</button>
+        </div>
+    `
+    cell.insertAdjacentHTML('beforeend', form)
+}
+
+var loadTodos = function() {
+    // 调用 ajax api 来载入数据
+    apiTodoAll(function(r) {
+        // console.log('load all', r)
+        // 解析为 数组
+        var todos = JSON.parse(r)
+        // 循环添加到页面中
+        for(var i = 0; i < todos.length; i++) {
+            var todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+var bindEventTodoAdd = function() {
+    var b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        var input = e('#id-input-todo')
+        var title = input.value
+        log('click add', title)
+        var form = {
+            'title': title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            var todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+var bindEventTodoDelete = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            var todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEventTodoEdit = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            var todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+
+var bindEventTodoUpdate = function() {
+    var todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        var self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            var editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            var input = editForm.querySelector('.todo-edit-input')
+            var title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            var todoCell = self.closest('.todo-cell')
+            var todo_id = todoCell.dataset.id
+            var form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                var todo = JSON.parse(r)
+                var selector = '#todo-' + todo.id
+                var todoCell = e(selector)
+                var titleSpan = todoCell.querySelector('.todo-title')
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+var bindEvents = function() {
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    bindEventTodoUpdate()
+}
+
+var __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+__main()
+
+
+
+
+
+
+/*
+给 删除 按钮绑定删除的事件
+1, 绑定事件
+2, 删除整个 todo-cell 元素
+*/
+// var todoList = e('.todo-list')
+// // 事件响应函数会被传入一个参数, 就是事件本身
+// todoList.addEventListener('click', function(event){
+//     // log('click todolist', event)
+//     // 我们可以通过 event.target 来得到被点击的元素
+//     var self = event.target
+//     // log('被点击的元素是', self)
+//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
+//     // classList 属性保存了元素的所有 class
+//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
+//     // log(self.classList)
+//     // 判断是否拥有某个 class 的方法如下
+//     if (self.classList.contains('todo-delete')) {
+//         log('点到了 删除按钮')
+//         // 删除 self 的父节点
+//         // parentElement 可以访问到元素的父节点
+//         self.parentElement.remove()
+//     } else {
+//         // log('点击的不是删除按钮******')
+//     }
+// })
+22:18:10 完整请求
+22:18:11 请求结束
+22:18:11 cookie ['Pycharm-e53a3ca9=916546ed-a824-4246-a000-b1303d4d1c36', 'Pycharm-4d1b6988=f15ac4ea-bbd5-4293-8f27-9bca62d3cae1']
+22:18:11 path and query /api/todo/all {} 
+22:18:11 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 2,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 3,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254672
+  },
+  {
+    "id": 4,
+    "title": "bfbr",
+    "completed": false,
+    "ct": 1534254672,
+    "ut": 1534254782
+  },
+  {
+    "id": 5,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 6,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 7,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 8,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 9,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254673,
+    "ut": 1534254673
+  },
+  {
+    "id": 10,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 11,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 12,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 13,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254674,
+    "ut": 1534254674
+  },
+  {
+    "id": 14,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 15,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 16,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 17,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 18,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 19,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254675,
+    "ut": 1534254675
+  },
+  {
+    "id": 20,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 21,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 22,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 23,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 24,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 25,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254676,
+    "ut": 1534254676
+  },
+  {
+    "id": 26,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254677,
+    "ut": 1534254677
+  },
+  {
+    "id": 27,
+    "title": "ll",
+    "completed": false,
+    "ct": 1534254677,
+    "ut": 1534254677
+  }
+]

@@ -1,10 +1,11 @@
 import socket
 import urllib.parse
 from utils import log
-# from routes import route_static
+from routes.routes import route_static
 # from routes import route_dict
 # from routes_todo import todo_routes
 from routes.api_todo import route_dict as api_todo
+from routes.todo import route_dict as todo_routes
 
 
 class Request(object):
@@ -91,10 +92,10 @@ def response_for_path(path, request):
     request.path = path
     request.query = query
     r = {
-        # '/static' : route_static,
+        '/static' : route_static,
     }
     # r.update(route_dict)
-    # r.update(todo_routes)
+    r.update(todo_routes)
     r.update(api_todo)
     # log('r', r, path, query)
     response = r.get(path, error)

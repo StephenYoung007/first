@@ -1,5 +1,8 @@
 import socket
-import ssl
+import requests.packages.urllib3.util.ssl_
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL'
+
+
 
 def parsed_url(url):
     protocol = 'http'
@@ -38,7 +41,7 @@ def socket_by_protocol(protocol):
     if protocol == 'http':
         s = socket.socket()
     else:
-        s = ssl.wrap_socket(socket.socket())
+        s = requests.packages.urllib3.util.ssl_.wrap_socket(socket.socket())
     return s
 
 def response_by_socket(s):
@@ -88,7 +91,7 @@ def get(url):
     return status_code, headers, body
 
 def main():
-    url = 'https://movie.douban.com/top250'
+    url = 'https://free-ss.cf/'
     status_code, headers, body = get(url)
     print(status_code, headers, body)
 

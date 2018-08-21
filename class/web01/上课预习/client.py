@@ -16,8 +16,8 @@ s = socket.socket()
 # s = ssl.wrap_socket(socket.socket())
 
 # 主机(域名或者ip)和端口
-host = 'http://blog.163.com/hu_baiming/'
-port = 80
+host = 'https://free-ss.cf'
+port = 443
 # 用 connect 函数连接上主机, 参数是一个 tuple
 s.connect((host, port))
 

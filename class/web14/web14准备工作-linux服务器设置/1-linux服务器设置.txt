@@ -71,3 +71,5 @@ nano /etc/environment
 # 加入下面的内容, 保存退出
 LC_CTYPE="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFtRK8R1vEZ0F4mPoaLWE714yyi7v3YdnFp1dGL1dH8YheiqTJus/pao4yD4g14zBTZHGkhtkcIaJ9OFt19a5N2g+J2sqiDa7LHELQdO9jLmxmwxWsweJROaIIbqq+wS8WAzDG8i6evP5KNVwfUBh62QwZc7vNxwHr5+tD5riFySj0ArrfZ51XbMJ1tYoUlF3sNPFawmFh8qUmOSjxYBz7cj7tVwNXgUT85ydAiM84txkJU0Le1sOYabEKfrt9z+Xg8b1jOIkeZDEZq03FvqikPuxKrdXSG1oroHrSD70HtMVt+/M0BttFpWWM+4Imqag3W+WndkvK3rFFZgjYSo+b flask

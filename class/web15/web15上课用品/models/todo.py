@@ -59,5 +59,5 @@ class Todo(Model):
         self.completed = False
         # ct ut 分别是 created_time  updated_time
         # 创建时间和 更新时间
-        self.ct = int(time.time())
+        self.ct = self.format_time()
         self.ut = self.ct

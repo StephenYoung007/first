@@ -39,7 +39,7 @@
             <tr>
                 <td>{{ t.id }}</td>
                 <td>{{ t.title }}</td>
-                <td>{{ t.ct }}</td>
+                <td class="time">{{ t.ct }}</td>
                 <!-- url_for 可以传递参数，先匹配动态路由，如果动态路由匹配失败则变成 query 参数 -->
                 <td><a href={{ url_for('.delete', todo_id=t.id) }}>delete</a></td>
             </tr>

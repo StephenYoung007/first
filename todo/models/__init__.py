@@ -55,6 +55,14 @@ class Model(object):
         return m
 
     @classmethod
+    def new(cls, form):
+        """
+        """
+        m = cls(form)
+        m.save()
+        return m
+
+    @classmethod
     def all(cls):
         """
         all 方法(类里面的函数叫方法)使用 load 函数得到所有的 models
@@ -121,6 +129,12 @@ class Model(object):
             save(l, path)
             # 返回被删除的元素
             return obj
+
+    @classmethod
+    def format_time(cls):
+        format = '%Y-%m-%d %H:%M:%S'
+        value = time.localtime(int(time.time()))
+        return time.strftime(format, value)
 
     def __repr__(self):
         """

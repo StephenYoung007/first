@@ -10,7 +10,7 @@ from flask import (
 
 from models.user import User
 
-from utils import log
+from utilis import log
 
 
 main = Blueprint('index', __name__)

@@ -36,3 +36,18 @@
 19:04:51 args ImmutableMultiDict([])
 19:04:55 debug 3
 19:04:55 args ImmutableMultiDict([])
+19:13:29 args ImmutableMultiDict([])
+19:13:33 debug 4
+19:13:33 args ImmutableMultiDict([])
+19:13:39 debug 5
+19:13:40 args ImmutableMultiDict([])
+19:13:48 debug 6
+19:13:48 args ImmutableMultiDict([])
+19:20:47 deleted todo id 7
+19:20:47 args ImmutableMultiDict([])
+19:20:49 deleted todo id 5
+19:20:49 args ImmutableMultiDict([])
+19:20:51 deleted todo id 6
+19:20:51 args ImmutableMultiDict([])
+19:20:55 debug 4
+19:20:55 args ImmutableMultiDict([])

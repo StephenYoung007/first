@@ -223,3 +223,61 @@ python list 有两个部件
     数组 存储数据在链表中的地址
     链表 实际存储数据
 """
+
+
+'''
+    def insert_before_index(self, position, element):
+        node = Node(element)
+        node_before = self._node_at_index(position-1)
+        node.next = self._node_at_index(position)
+        node_before.next = node
+        return self.element_at_index(position)
+
+    # O(n)
+    def insert_after_index(self, position, element):
+        node = Node(element)
+        node_before = self._node_at_index(position-1)
+        node.next = self._node_at_index(position )
+        node_before.next = node
+        return self.element_at_index(position + 1)
+
+    # O(1)
+    def first_object(self):
+        return self.head
+
+    # O(n)
+    def last_object(self):
+        return self._node_at_index(self.length()-1)
+
+    # O(n)
+    def _append(self, node):
+        if self.head is None:
+            self.head = node
+        else:
+            last_node = self.last_object()
+            last_node.next = node
+            node.front = last_node
+
+
+    def __repr__(self):
+        st = []
+        node = self.head
+        while node is not None:
+            st.append(node.element)
+            node = node.next
+        s = ' '.join(str(ele) for ele in st)
+        return s
+
+
+def test():
+    list = LinkedList()
+    list._append(Node(6))
+    print(list,list.length())
+    list._append(Node(7))
+    print(list)
+    list.insert_after_index(2, 5)
+
+if __name__ == '__main__':
+    test()
+    # pass
+'''

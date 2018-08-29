@@ -29,6 +29,10 @@ def test():
     t = Tree(0)
     left = Tree(1)
     right = Tree(2)
+    left.left = Tree(8)
+    left.right = Tree(7)
+    right.left = Tree(6)
+    right.right = Tree(5)
     t.left = left
     t.right = right
     # 遍历

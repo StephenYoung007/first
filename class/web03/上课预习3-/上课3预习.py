@@ -5,7 +5,7 @@
 
 static 目录中存储了图片
 templates 目录中存储了 html 文件
-utils.py 包含了 log 函数
+utilis.py 包含了 log 函数
 server.py 是扩展的服务器代码, 详细流程功能说明请看后文
 routes.py 是服务器能处理的 path(路由) 和 路由处理函数
 models.py 是数据存储的代码

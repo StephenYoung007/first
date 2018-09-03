@@ -1,0 +1,47 @@
+21:02:08 kwargs,  {'id': -1} <class 'dict'>
+21:03:01 kwargs,  {'id': -1} <class 'dict'>
+21:05:19 kwargs,  {'id': -1} <class 'dict'>
+21:06:50 kwargs,  {'id': -1} <class 'dict'>
+21:14:59 kwargs,  {'id': -1} <class 'dict'>
+21:15:50 kwargs,  {'id': -1} <class 'dict'>
+21:29:56 kwargs,  {'id': -1} <class 'dict'>
+21:30:47 kwargs,  {'id': -1} <class 'dict'>
+21:33:00 kwargs,  {'username': 'cdsv'} <class 'dict'>
+21:33:00 debug 0
+21:37:21 kwargs,  {'username': 'cdsv'} <class 'dict'>
+21:37:28 kwargs,  {'username': 'cdsvdad'} <class 'dict'>
+21:37:28 debug 1
+21:39:22 kwargs,  {'username': 'cdsvdad'} <class 'dict'>
+21:39:38 kwargs,  {'username': 'cdsvdad'} <class 'dict'>
+21:39:38 kwargs,  {'id': -1} <class 'dict'>
+21:40:32 kwargs,  {'username': 'dasdas'} <class 'dict'>
+21:40:32 debug 2
+21:40:32 kwargs,  {'id': -1} <class 'dict'>
+21:45:22 kwargs,  {'username': 'gua'} <class 'dict'>
+21:45:22 kwargs,  {'id': -1} <class 'dict'>
+21:45:22 kwargs,  {'id': -1} <class 'dict'>
+21:45:57 kwargs,  {'username': 'gua'} <class 'dict'>
+21:45:57 kwargs,  {'id': -1} <class 'dict'>
+21:45:57 kwargs,  {'id': -1} <class 'dict'>
+21:48:08 kwargs,  {'username': 'gua'} <class 'dict'>
+21:48:08 debug 3
+21:48:09 kwargs,  {'id': -1} <class 'dict'>
+21:48:17 kwargs,  {'username': 'gua'} <class 'dict'>
+21:49:43 kwargs,  {'username': 'gua'} <class 'dict'>
+21:51:51 kwargs,  {'username': 'gua'} <class 'dict'>
+21:53:29 kwargs,  {'id': -1} <class 'dict'>
+21:53:29 kwargs,  {'id': -1} <class 'dict'>
+21:54:10 kwargs,  {'username': 'gua'} <class 'dict'>
+21:56:44 kwargs,  {'username': 'gua'} <class 'dict'>
+21:56:44 kwargs,  {'id': 4} <class 'dict'>
+22:10:20 kwargs,  {'username': 'gua'} <class 'dict'>
+22:10:20 kwargs,  {'id': 4} <class 'dict'>
+22:10:33 kwargs,  {'username': 'stephenyoung'} <class 'dict'>
+22:10:33 debug 4
+22:10:33 kwargs,  {'id': 4} <class 'dict'>
+22:10:39 kwargs,  {'username': 'stephenyoung'} <class 'dict'>
+22:10:39 kwargs,  {'id': 5} <class 'dict'>
+22:11:12 kwargs,  {'id': 5} <class 'dict'>
+22:11:14 kwargs,  {'username': 'stephenyoung'} <class 'dict'>
+22:11:14 kwargs,  {'id': 5} <class 'dict'>
+22:12:08 kwargs,  {'id': 5} <class 'dict'>

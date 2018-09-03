@@ -1,6 +1,6 @@
 import json
 import time
-from utilis import log
+from utils import log
 
 
 def save(data, path):

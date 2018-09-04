@@ -9,12 +9,16 @@ app.secret_key = config.secret_key
 
 from routes.index import main as index_routes
 app.register_blueprint(index_routes)
+from routes.topic import main as topic_routes
+app.register_blueprint(topic_routes, url_prefix='/topic')
+from routes.todo import main as todo_routes
+app.register_blueprint(todo_routes, url_prefix='/todo')
 
 
 if __name__ == '__main__':
     config = dict(
         debug=True,
         host='0.0.0.0',
-        port=3000,
+        port=8000,
     )
     app.run(**config)

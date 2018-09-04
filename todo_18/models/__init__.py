@@ -136,6 +136,13 @@ class Model(object):
             # 返回被删除的元素
             return obj
 
+    @classmethod
+    def format_time(cls):
+        format = '%Y-%m-%d %H:%M:%S'
+        value = time.localtime(int(time.time()))
+        return time.strftime(format, value)
+
+
     def __repr__(self):
         """
         __repr__ 是一个魔法方法

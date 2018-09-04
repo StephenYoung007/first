@@ -1,6 +1,6 @@
 import json
 import time
-from utils import log
+from utilis import log
 
 
 def save(data, path):
@@ -55,10 +55,12 @@ class Model(object):
         return m
 
     @classmethod
-    def new(cls, form):
-        """
-        """
+    def new(cls, form, **kwargs):
         m = cls(form)
+        # 额外地设置 m 的属性
+        for k, v in kwargs.items():
+            # 这是一个神奇的函数, 可以设置对象的属性
+            setattr(m, k, v)
         m.save()
         return m
 
@@ -111,6 +113,10 @@ class Model(object):
         return cls.find_by(id=id)
 
     @classmethod
+    def get(cls, id):
+        return cls.find_by(id=id)
+
+    @classmethod
     def delete(cls, id):
         models = cls.all()
         index = -1
@@ -135,6 +141,7 @@ class Model(object):
         format = '%Y-%m-%d %H:%M:%S'
         value = time.localtime(int(time.time()))
         return time.strftime(format, value)
+
 
     def __repr__(self):
         """

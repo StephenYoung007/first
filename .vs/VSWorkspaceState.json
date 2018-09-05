@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\todo_18",
+    "\\class\\web18",
+    "\\class\\web18\\web18-bbs基础",
     "\\todo_18\\templates"
   ],
-  "SelectedNode": "\\todo_18\\app.py",
   "PreviewInSolutionExplorer": false
 }

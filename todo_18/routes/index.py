@@ -9,17 +9,11 @@ from flask import (
 )
 
 from models.user import User
+from routes import *
 
 from utilis import log
 
 main = Blueprint('index', __name__)
-
-
-def current_user():
-    uid = session.get('user_id', -1)
-    print('uid',uid)
-    u = User.find_by(id=uid)
-    return u
 
 
 @main.route('/')

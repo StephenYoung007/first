@@ -49,52 +49,51 @@
     </div>
 
     <div class='panel'>
-{#        <div class='header'>#}
-{#            <span class='col_fade'>#}
-{#                <!-- 过滤器 -->#}
-{#                {{ topic.replies() | count }} 回复#}
-{#            </span>#}
-{#        </div>#}
-
-{#        {% for r in topic.replies() %}#}
-{#        <div class='cell reply_area reply_item'>#}
-{#            <div class='author_content'>#}
-{#                <a href="/user/leiwei1991" class="user_avatar">#}
-{#                    <img src="https://avatars2.githubusercontent.com/u/10721874?v=3&amp;s=120"#}
-{#                         title="{{ r.user().username }}"/>#}
-{#                </a>#}
-{#                <div class='user_info'>#}
-{#                    <a class='dark reply_author'>#}
-{#                        {{ r.user().username }}#}
-{#                    </a>#}
-{#                    <a class="reply_time">#}
-{#                        {{ loop.index }}楼 • 2 天前#}
-{#                    </a>#}
-{#                </div>#}
-{#                <div class='user_action'>#}
-{#                    <span>#}
-{#                        <i class="fa up_btn#}
-{#                          fa-thumbs-o-up#}
-{#                          invisible" title="喜欢"></i>#}
-{#                        <span class="up-count">#}
-{#                        </span>#}
-{#                    </span>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class='reply_content from-leiwei1991'>#}
-{#                <div class="markdown-text">#}
-{#                    {{ r.content }}#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#        {% endfor %}#}
-{#        <div>#}
-{#            <form action="{{ url_for('reply.add') }}" method="post">#}
-{#                <input type="hidden" name="topic_id" value="{{ topic.id }}">#}
-{#                <textarea name="content"></textarea>#}
-{#                <button>添加回复</button>#}
-{#            </form>#}
-{#        </div>#}
+        <div class='header'>
+            <span class='col_fade'>
+                <!-- 过滤器 -->
+                {{ topic.replies() | count }} 回复
+            </span>
+        </div>
+        {% for r in topic.replies() %}
+        <div class='cell reply_area reply_item'>
+            <div class='author_content'>
+                <a href="/user/leiwei1991" class="user_avatar">
+                    <img src="https://avatars2.githubusercontent.com/u/10721874?v=3&amp;s=120"
+                         title="{{ r.user().username }}"/>
+                </a>
+                <div class='user_info'>
+                    <a class='dark reply_author'>
+                        {{ r.user().username }}
+                    </a>
+                    <a class="reply_time">
+                        {{ loop.index }}楼 • 2 天前
+                    </a>
+                </div>
+                <div class='user_action'>
+                    <span>
+                        <i class="fa up_btn
+                          fa-thumbs-o-up
+                          invisible" title="喜欢"></i>
+                        <span class="up-count">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class='reply_content from-leiwei1991'>
+                <div class="markdown-text">
+                    {{ r.content }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div>
+            <form action="{{ url_for('reply.add') }}" method="post">
+                <input type="hidden" name="topic_id" value="{{ topic.id }}">
+                <textarea name="content"></textarea>
+                <button>添加回复</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

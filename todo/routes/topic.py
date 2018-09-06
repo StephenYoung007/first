@@ -10,16 +10,10 @@ from flask import (
 
 from models.topic import Topic
 from models.user import User
+from routes import *
 
 
 main = Blueprint('topic', __name__)
-
-
-def current_user():
-    uid = session.get('user_id', -1)
-    print('uid',uid)
-    u = User.find_by(id=uid)
-    return u
 
 
 @main.route('/')
@@ -30,7 +24,11 @@ def index():
 
 @main.route('/new', methods=['GET'])
 def new():
-    return render_template('/topic/new.html')
+    u = current_user()
+    if u is None:
+        return redirect(url_for('index.index'))
+    else:
+        return render_template('/topic/new.html')
 
 @main.route('/add', methods=['POST'])
 def add():
@@ -40,7 +38,7 @@ def add():
     return redirect(url_for('.index'))
 
 
-@main.route('/<int:id>')
+@main.route('/detail/<int:id>')
 def detail(id):
     m = Topic.find(id)
     user_id = m.user_id

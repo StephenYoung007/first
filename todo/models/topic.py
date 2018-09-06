@@ -11,3 +11,11 @@ class Topic(Model):
         self.ct = int(time.time())
         self.ut = self.ct
         self.user_id = form.get('user_id', '')
+
+
+    def replies(self):
+        from .reply import Reply
+        ms = Reply.find_all(topic_id = self.id)
+        return ms
+
+

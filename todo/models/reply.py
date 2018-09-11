@@ -13,3 +13,4 @@ class Reply(Model):
     def user(self):
         from .user import User
         u = User.find(self.user_id)
+        return u

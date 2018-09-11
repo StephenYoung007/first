@@ -15,6 +15,8 @@ from routes.todo import main as todo_routes
 app.register_blueprint(todo_routes, url_prefix='/todo')
 from routes.reply import main as reply_routes
 app.register_blueprint(reply_routes, url_prefix='/reply')
+from routes.board import main as board_routes
+app.register_blueprint(board_routes, url_prefix='/board')
 
 
 if __name__ == '__main__':

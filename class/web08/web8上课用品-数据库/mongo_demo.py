@@ -10,7 +10,7 @@ import pymongo
 
 
 # 连接 mongo 数据库, 主机是本机, 端口是默认的端口
-client = pymongo.MongoClient("mongodb://localhost:27017")
+client = pymongo.MongoClient("mongodb://flask.stephenyoung.top:27017")
 
 # 设置要使用的数据库
 mongodb_name = 'web8'

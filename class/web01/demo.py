@@ -93,7 +93,7 @@ def get(url):
 
 def main():
     # url = 'https://movie.douban.com/top250'
-    url = 'http://udp.stephenyoung.top/'
+    url = 'http://udp.stephenyoung.top/test'
     status_code, headers, body = get(url)
     print(status_code, headers, body)
 

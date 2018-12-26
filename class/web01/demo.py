@@ -76,13 +76,13 @@ def get(url):
     s.connect((host, port))
 
     request = 'GET {} HTTP/1.1\r\nhost: {}\r\nConnection: close\r\n\r\n'.format(path, host)
-    # request = 'GET / HTTP/1.1\r\nhost: 35.221.67.128\r\nConnection: close\r\n\r\n'.format(path, host)
+    # request = 'GET /test HTTP/1.1\r\nhost: 192.168.1.110\r\nConnection: close\r\n\r\n'
     encoding = 'utf-8'
     s.send(request.encode(encoding))
 
     response = response_by_socket(s)
     r = response.decode(encoding)
-    print(r)
+    print('response', r)
 
     status_code, headers, body = parsed_response(r)
     if status_code in [301, 302]:
@@ -93,7 +93,7 @@ def get(url):
 
 def main():
     # url = 'https://movie.douban.com/top250'
-    url = 'http://udp.stephenyoung.top/test'
+    url = 'http://192.168.1.110:3000/test'
     status_code, headers, body = get(url)
     print(status_code, headers, body)
 

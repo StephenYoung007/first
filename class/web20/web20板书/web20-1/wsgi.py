@@ -19,6 +19,8 @@ ln -s /var/www/bbs/bbs.nginx /etc/nginx/sites-enabled/bbs
 
 ➜  ~ cat /etc/supervisor/conf.d/bbs.conf
 
+gunicorn wsgi --bind 0.0.0.0:2000 --pid /tmp/bootstrap.pid
+
 [program:bbs]
 command=/usr/local/bin/gunicorn wsgi -c gunicorn.config.py
 directory=/var/www/bbs
